@@ -55,7 +55,7 @@ Access it at: http://127.0.0.1:8000/
 
 ### API. `POST /predict/`
 
-**Save top 3 latest news (must be unique by URL)**
+**Get the prediction by uploading an MRI image of Alzheimer's Disease**
 
 ```json
 POST /predict/
@@ -77,6 +77,6 @@ Returns:
 ---
 
 # Play with the portal
-choose images from the test images folder
+Choose images from the test images folder
 
 ![alt text](image.png)
