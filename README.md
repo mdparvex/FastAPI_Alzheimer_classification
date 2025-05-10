@@ -33,12 +33,12 @@ install requirements.txt
 pip install -r requirements.txt
 ```
 
-## How to Run the Server
+### How to Run the Server
 Go to the project root directory and run
 ```bash
 uvicorn app.main:app
 ```
-## Go to the url
+### Go to the url
 Access it at: http://127.0.0.1:8000/
 
 ### Run with Docker
