@@ -1,13 +1,13 @@
 # FastAPI_Alzheimer_classification
-This is end-to-end deep learning ptoject to classify stages of Alzheimer disease. 
+This is an end-to-end deep learning project to classify stages of Alzheimer's disease. 
 
-## ptoject worflow and description
+## project workflow and description
 
 - collected dataset from [kaggle](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset-v2)
 - preprocessed and clean data
-- Augmented the train and validation data
-- Train on different CNN architecture picked the best model with 98% accuracy
-- Created a api to interact with model
+- Augmented the training and validation data
+- Train on different CNN architectures, pick the best model with 98% accuracy
+- Created an api to interact with the model
 
 ## setup instruction
 
@@ -38,15 +38,15 @@ Go to the project root directory and run
 ```bash
 uvicorn app.main:app
 ```
-### Go to the url
+### Go to the URL
 Access it at: http://127.0.0.1:8000/
 
 ### Run with Docker
-build the docker image
+Build the Docker image
 ```bash
 docker build -t alzapp:latest
 ```
-run the docker image
+Run the Docker image
 ```bash
 docker run -d -p 8000:8000 alzapp:latest
 ```
