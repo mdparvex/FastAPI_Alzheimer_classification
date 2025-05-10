@@ -77,6 +77,6 @@ Returns:
 ---
 
 # Play with the portal
-choode image from the test images folder
+choose images from the test images folder
 
 ![alt text](image.png)
