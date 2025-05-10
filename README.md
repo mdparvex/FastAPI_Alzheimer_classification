@@ -53,6 +53,29 @@ docker run -d -p 8000:8000 alzapp:latest
 
 Access it at: http://127.0.0.1:8000/
 
+### API. `POST /predict/`
+
+**Save top 3 latest news (must be unique by URL)**
+
+```json
+POST /predict/
+{
+  "file": File
+}
+```
+
+Returns:
+
+```json
+{
+    "filename": filename,
+    "predictions": predictions,
+    "message": "File uploaded successfully"
+}
+```
+
+---
+
 # Play with the portal
 choode image from the test images folder
 
