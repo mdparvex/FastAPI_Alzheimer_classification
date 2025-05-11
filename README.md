@@ -6,7 +6,7 @@ This is an end-to-end deep learning project to classify stages of Alzheimer's di
 - collected dataset from [kaggle](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset-v2)
 - preprocessed and clean data
 - Augmented the training and validation data
-- Train on different CNN architectures, pick the best model with 98% accuracy
+- Trained on different CNN architectures, achived the best model with 98% accuracy
 - Created an api to interact with the model
 
 ## setup instruction
@@ -18,7 +18,7 @@ git clone https://github.com/mdparvex/FastAPI_Alzheimer_classification.git
 
 ```
 
-## Setup locally
+## Setup locally (Windows)
 Create a virtual environment
 ```bash
 python -m virtualenv <environment_name>
