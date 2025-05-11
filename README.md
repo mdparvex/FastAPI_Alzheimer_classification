@@ -15,7 +15,7 @@ This is an end-to-end deep learning project to classify stages of Alzheimer's di
 
 ```bash
 git clone https://github.com/mdparvex/FastAPI_Alzheimer_classification.git
-cd countries_api
+
 ```
 
 ## Setup locally
