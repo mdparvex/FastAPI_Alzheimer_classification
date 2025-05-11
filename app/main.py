@@ -34,23 +34,27 @@ async def read_item(request: Request):
 async def predict(file: UploadFile = File(...)):
 
     if file and allowed_file(file.filename):
-        class_result , prob_result = model_predict(file , model)
+        try:
+            class_result , prob_result = model_predict(file , model)
 
-        predictions = {
-                "class1":class_result[0],
-                "class2":class_result[1],
-                "class3":class_result[2],
-                "class4":class_result[3],
-                "prob1": prob_result[0],
-                "prob2": prob_result[1],
-                "prob3": prob_result[2],
-                "prob4": prob_result[3],
-        }
-        return JSONResponse(content={
-            "filename": file.filename,
-            "predictions": predictions,
-            "message": "File uploaded successfully"
-        })
+            predictions = {
+                    "class1":class_result[0],
+                    "class2":class_result[1],
+                    "class3":class_result[2],
+                    "class4":class_result[3],
+                    "prob1": prob_result[0],
+                    "prob2": prob_result[1],
+                    "prob3": prob_result[2],
+                    "prob4": prob_result[3],
+            }
+            return JSONResponse(status_code=200,content={
+                "filename": file.filename,
+                "predictions": predictions,
+                "message": "File uploaded successfully"
+            })
+        
+        except Exception as e:
+            return JSONResponse(status_code=500, content={"message": f"Prediction failed: {str(e)}"})
 
     else:
         return JSONResponse(
