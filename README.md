@@ -44,7 +44,7 @@ Access it at: http://127.0.0.1:8000/
 ### Run with Docker
 Build the Docker image
 ```bash
-docker build -t alzapp:latest
+docker build -t alzapp:latest .
 ```
 Run the Docker image
 ```bash
